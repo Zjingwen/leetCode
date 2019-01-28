@@ -33,26 +33,7 @@
  * @return {number[]}
  */
 var getRow = function(rowIndex) {
-  if(!rowIndex) return [1];
-  if(rowIndex == 1) return [1,1];
-  // if(rowIndex == 2) return [[1],[1,1]];
 
-  let col = [[1],[1,1]];
-
-  for(let j = 3; j <= rowIndex+1;j++){
-    col.push([]);
-    for(let i = 0; i< j;i++){
-      if(i == 0) {
-        col[j-1][0] = 1;
-      } else if(i == j-1){
-        col[j-1][j-1] = 1;
-      } else {
-        col[j-1].push(col[j-1-1][i-1]+col[j-1-1][i]);
-      }
-    }
-  };
-
-  return col[3];
 };
 // const end = getRow(3);
 // console.log(JSON.stringify(end));
