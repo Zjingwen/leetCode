@@ -105,7 +105,7 @@ var getIntersectionNode = function(headA, headB) {
   // console.log(JSON.stringify(headA));
   // console.log(JSON.stringify(headB));
 };
-const ListA = '{"val":4,"next":{"val":1,"next":{"val":8,"next":{"val":4,"next":{"val":5,"next":null}}}}}';
-const ListB = '{"val":5,"next":{"val":0,"next":{"val":1,"next":{"val":8,"next":{"val":4,"next":{"val":5,"next":null}}}}}}';
-const end = getIntersectionNode(ListA,ListB);
-console.log(end);
+// const ListA = '{"val":4,"next":{"val":1,"next":{"val":8,"next":{"val":4,"next":{"val":5,"next":null}}}}}';
+// const ListB = '{"val":5,"next":{"val":0,"next":{"val":1,"next":{"val":8,"next":{"val":4,"next":{"val":5,"next":null}}}}}}';
+// const end = getIntersectionNode(ListA,ListB);
+// console.log(end);
